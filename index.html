@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Run.png" type="image/x-icon">
+    <title>Kid Running Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .loader{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .loader .img{
+            width: 100px;
+            height: auto;
+            overflow: hidden;
+            position: absolute;
+            animation-name: running;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        
+        .loader .matter{
+            position: absolute;
+            bottom: 120px;
+            font-size: 30px;
+            font-weight: 900;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        @keyframes running{
+            0%{
+                left: 0%;
+            }
+
+            10%{
+                left: 10%;
+            }
+            
+            20%{
+                left: 20%;
+            }
+            
+            30%{
+                left: 30%;
+            }
+            
+            40%{
+                left: 40%;
+            }
+            
+            50%{
+                left: 50%;
+            }
+            
+            60%{
+                left: 60%;
+            }
+            
+            70%{
+                left: 70%;
+            }
+            
+            80%{
+                left: 80%;
+            }
+
+            90%{
+                left: 90%;
+            }
+
+            100%{
+                left: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <img class="img" src="Running.gif" alt="Running Animation">
+        <p class="matter">Loading...</p>
+    </div>
+</body>
+</html>
